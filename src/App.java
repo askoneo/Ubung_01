@@ -1,5 +1,7 @@
 public class App {
+    Dozierender dozierender;
+    
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, ben");
+        Dozierender dozierender = new Dozierender();
     }
 }
