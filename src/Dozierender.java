@@ -3,13 +3,12 @@ public class Dozierender {
     String fakultaet;
     String bueronummer ;
 
-    public static void Doz(String name, String fakultaet, String bueronummer){
-     name = new String();
-     fakultaet = new String();;
-     bueronummer = new String();
+    public Dozierender(String name, String fakultaet, String bueronummer){
+        this.name = name;
+        this.fakultaet = fakultaet;
+        this.bueronummer = bueronummer;
     }
-    public void frageBeantworten(){
-      // TODO document why this method is empty
+    public String frageBeantworten(String frage){
+        return "Die Antwort auf die Frage:" + frage + "ist...";
     }
 }
-
