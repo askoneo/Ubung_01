@@ -1,15 +1,16 @@
 public class Dozierender {
     String name;
-    String fakultaet;
+    String fakultaet;  
     String bueronummer ;
 
-    public static void Doz(String name, String fakultaet, String bueronummer){
-     name = new String();
-     fakultaet = new String();;
-     bueronummer = new String();
-    }
-    public void frageBeantworten(){
-      // TODO document why this method is empty
-    }
+  public Dozierender(String name, String fakultaet, String bueronummer){
+      this.name = name;
+      this.fakultaet = fakultaet;
+      this.bueronummer = bueronummer;
+  }
+  public String frageBeantworten(String frage){
+      return "Die Antwort auf die Frage:" + frage+ "ist...";
+  }
+
 }
 
