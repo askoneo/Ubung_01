@@ -1,3 +1,4 @@
+package allgemein;
 public class Dozierender {
     String name;
     String fakultaet;  

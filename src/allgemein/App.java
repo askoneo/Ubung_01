@@ -1,3 +1,8 @@
+package allgemein;
+import allgemein.Studierender;
+
+import allgemein.Dozierender;
+
 public class App {
     Dozierender dozierender;
     Studierender studierender;

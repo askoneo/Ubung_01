@@ -1,3 +1,4 @@
+package allgemein;
 public class Studierender {
     String name;
     String matrikelnummer;
