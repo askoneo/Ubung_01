@@ -1,4 +1,7 @@
 package allgemein;
+
+import java.util.List;
+
 public class Dozierender {
     String name;
     String fakultaet;  
@@ -9,8 +12,21 @@ public class Dozierender {
       this.fakultaet = fakultaet;
       this.bueronummer = bueronummer;
   }
-  public String frageBeantworten(String frage){
-      return "Die Antwort auf die Frage:" + frage+ "ist...";
+  public String empfangeneSprechstundenanfrage(Studierender studierender, String datum, String uhrzeit){
+    return "Sprechstundenanfrage von " + studierender.getName() + " für den " + datum + " um " + uhrzeit + " erhalten.";
+
+  }
+
+  public void feedbackGeben(String feedback){
+    feedbackListe.add(feedback);
+    System.out.println("Feedback erhalten " + feedback);
+  }
+
+  public List<String> getFeedbackListe(){
+    return feedbackListe;
+  }
+  public String sprechstundeAnfragen(Studierender studierender, String datum, String uhrzeit) {
+    throw new UnsupportedOperationException("Unimplemented method 'sprechstundeAnfragen'");
   }
 
 }

@@ -10,7 +10,12 @@ public class Studierender {
     this.studiengang = studiengang;
 
     }
-    public String fragestellen(String farge){
-        return " Die Frage ist: " + farge;
+    public String sprechstundeAnfragen(Dozierender dozierender, String datum, String uhrzeit){
+        return dozierender.sprechstundeAnfragen(this, datum, uhrzeit);
+    }
+
+    public String getName(){
+        return name;
     }
 }
+
